@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Página de Login da Vida+.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Clínica Vida+</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+
+    body {
+        width: 100%; 
+        height: 100vh;
+        display: flex; 
+        justify-content: center;
+        align-items: center; 
+        margin: 0; 
+        background-color: #e0e0e0; 
+    }
+
+    main {
+        width: 50%;
+        max-width: 400px;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: #fff;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
+    }
+
+    button {
+        background-color: gray;
+        color: black;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+    }
+
+    button .material-icons {
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+
+    button:hover {
+        transform: scale(1.05);
+    }
+
+    button:active {
+        transform: scale(0.95); 
+    }
+
+    
+
+    </style>
+</head>
+<body>
+    <main>
+        <form action="processaLogin.php" method="POST">
+            <label for="email">Usuário/E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+            
+            <button type="submit">
+                <span class="material-icons">login</span> Entrar
+            </button>
+        </form>
+    </main>
+</body>
+</html>
